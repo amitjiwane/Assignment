@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+
+$(document).ready(function(){
+	$("button").dblclick(function(){
+		$("#doubleClickDemo").html("<h3>Hello Double click</h3>");
+	});
+});
+
+$(document).ready(function(){
+	$("#button2").mouseenter(function(){
+		$("#mouseEnterDemo").append("<h3>This is appending</h3>");
+	});
+});
+
+
+$(document).ready(function(){
+	$("#button3").mouseleave(function(){
+		$("#mouseLeaveDemo").append("<h3>This is appending</h3>")
+	});
+});
+
+$(document).ready(function(){
+	$("#button4").mouseleave(function(){
+		$("#mouseUpDemo").html("<h3>Hello mouseUp</h3>");
+	});
+});
+
+
+$(document).ready(function(){
+	$("#button5").mousedown(function(){
+		$("#mouseUpDemo").html("<h3>Hello mousedown</h3>");
+	});
+});
+
+</script>
+
+</head>
+<body>
+<p id="doubleClickDemo">This is double click</p>
+<p id="mouseEnterDemo">This is mouseEnter</p>
+<p id="mouseleaveDemo">This is mouseLeave</p>
+<p id="mouseDownDemo">This is mouse down</p>
+<!-- <button id="mouseUpDemo">click mouseUp</button> -->
+<button id="button2">click2</button>
+<button id="button3">click MouseLeave</button>
+<button id="button4">click MouseUp</button>
+<button id="button5">click MouseDown</button>
+</body>
+</html>

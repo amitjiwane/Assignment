@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script>
+function myFunction(){
+	var result=parseInt(document.getElementById("result").value);
+	var x=parseInt(document.getElementById("a").value);
+	var y=parseInt(document.getElementById("b").value);
+	alert("Submitted = "+(x+y));
+}
+</script>
+
+</head>
+<body>
+
+<form oninput=""   onsubmit="myFunction()">
+<input type="range" id="a" value="30">  <!-- Accepting value from slider-->
+<input type="number" id="b" value="30"> <!-- accepting value from text box -->
+
+<output name="result" id="result"></output>
+<input type="submit">
+</form>
+
+
+</body>
+</html>

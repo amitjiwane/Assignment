@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+img{
+	width:100px;
+	height:100px;
+	position: relative;
+}
+h2{
+	background-color: gray;
+}
+ body{
+	background-image: url('img/test/abc.jpg');
+}
+
+a:visited {
+  color: green;
+}
+ 
+ p{
+ font-family: cursive;
+ font-weight: bold;
+ }
+ .size{
+ font-family:cursive;
+ font-size: x-large;
+ color: green;
+ }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("button").click(function(){
+		$(".htmlDemo").html("<h1>Hello</h1>");
+		$("#removeDemo").remove();
+		$(".afterIt").after("After using");
+		$("input:text").val("Amit Jiwane");
+		$("#appendDemo").append("<h1>Hello World APPENDED</h1>");
+		$(".prependDemo").prepend("<h1>Hello World PREPEND</h1>");
+		$("body").attr("bgcolor","red");
+		$("body").attr("text","white");
+		$("#attrDemo").attr("bgcolor","blue");
+	});
+});
+
+</script>
+</head>
+<body>
+<div class="afterIt">This is afterIT</div>
+<p id="removeDemo">This is Remove Demo</p>
+<p class="htmlDemo">This is HTML DEMO</p>
+<p id="appendDemo">This is appendDemo</p>
+<p class="prependDemo">This is prepend</p>
+<button>click</button>
+<input type="text" value="sample value">
+<p id="attrDemo">This is using for attribute</p>
+</body>
+</html>

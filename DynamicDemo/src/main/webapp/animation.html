@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+@keyframes sample{
+  from {background-color: blue;}
+    to {background-color: yellow;}
+
+}
+
+@keyframes multiple_colour{
+    0% {background-color: blue;width: 100px; height: 100px;}
+    10% {background-color: yellow;width: 300px;    height: 300px;}
+    50% {background-color: green;width: 150px;    height: 150px;}
+    100% {background-color: maroon;width: 50px; height: 50px;}
+}
+
+div{
+width: 200%;
+height: 200%;
+animation-name: sample;
+animation-duration: 20s;
+}
+
+p{
+width: 200%;
+height: 200%;
+animation-name: multiple_colour;
+animation-duration: 20s;
+   animation-delay: 2s;
+    position: relative;
+      animation-direction: reverse;
+  
+}
+
+</style>
+
+</head>
+<body>
+
+<p>sample</p>
+
+<div></div>
+</body>
+</html>

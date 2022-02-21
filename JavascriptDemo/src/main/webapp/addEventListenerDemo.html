@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p id="mypara">Click Here</p>
+<script>
+document.write(navigator.appName);
+document.write(navigator.language);
+document.write(navigator.appCodeName);
+document.write(navigator.appVersion);
+document.write(navigator.platform);
+document.write(navigator.userAgent);
+document.write(navigator.geoLocation.getCurrentPosition(showPosition));
+
+document.getElementById("mypara").addEventListener('click',myFunction);
+function myFunction(){
+	alert("Hello");
+}
+</script>
+
+
+<button onclick="history.back()">Go Back</button>
+<button onclick="history.forward()">Go ahead</button>
+<button onclick="history.go(-1)">Go Ahead</button>
+</body>
+</html>

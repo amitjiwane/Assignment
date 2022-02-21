@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+var a=10;
+var b=20;
+var z=a+b;
+console.log(z)
+
+function myFunction(){
+	document.getElementById("sample").innerHTML="Hello, I am in innerHTML";
+}
+function myFunction2(){
+	confirm("Error occured: abc.png does not exists");
+}
+</script>
+</head>
+<body>
+<img  src="abc.png" onerror="myFunction2()">
+<button onclick="alert('Hello, I am in alert');">Click Here01</button>
+<button onclick="confirm('Hello I am in Confirm')">Click Here02</button>
+<button onclick="myFunction()">Click Here03</button>
+<button onclick="this.innerHTML='do not click on paragraph'">Click Here04</button>
+<p id="sample">Value will be replace</p>
+
+</body>
+</html>

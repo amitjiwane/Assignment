@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="formDemo.css">
+</head>
+<body>
+	<h3>Hello</h3>
+	<form action="http://localhost:8080/" method="get">
+		<caption>
+			<h1>Registration Form</h1>
+		</caption>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="name"
+					placeholder="Enter your name" readonly="readonly"></td>
+			</tr>
+
+			<tr>
+				<td>Email ID</td>
+				<td><input type="email" name="email"
+					placeholder="Enter your email" autofocus="autofocus"></td>
+			</tr>
+
+			<td>Phone</td>
+			<td><input type="phone" name="phone"
+				placeholder="Enter your phone number"></td>
+			</tr>
+
+			<tr>
+				<td>Date of Birth</td>
+				<td><input type="date" name="dob"
+					placeholder="Enter your Date of Birth"></td>
+			</tr>
+
+
+			<tr>
+				<td>Todays Date</td>
+				<td><input type="date" name="tob"
+					placeholder="Enter Today's Date"></td>
+			</tr>
+
+			<tr>
+				<td>Gender</td>
+				<td>Male<input type="radio" name="gender" value="Male">
+					Female<input type="radio" name="gender" value="Female">
+				</td>
+			</tr>
+			<tr>
+				<td>Qualification</td>
+				<td>High School<input type="checkbox" name="qualification"
+					value="HS"> Intermediate<input type="checkbox"
+					name="qualification" value="inter"> Graduate<input
+					type="checkbox" name="qualification" value="graduate"> Post
+					Graduate<input type="checkbox" name="qualification" value="pg">
+					
+				</td>
+			</tr>
+			<tr>
+				<td>Comment</td>
+				<td><textarea rows="10" cols="20">Comments</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Submit"></td>
+				<td><input type="reset" value="clear form"></td>
+			</tr>
+
+		</table>
+	</form>
+
+</body>
+</html>

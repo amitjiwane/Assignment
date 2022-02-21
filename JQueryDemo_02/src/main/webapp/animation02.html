@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	crossorigin="anonymous"></script>
+<style>
+div {
+	display: block;
+	width: 370px;
+	padding: 10px;
+	font-size: 25px;
+	background-color: red;
+	border: 2px solid green;
+}
+.newdiv {
+    background-color: blue;
+    color: red;
+    width: 100px;
+    height: 100px;
+}
+</style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("mydiv").animate(function(){
+		
+	        width: "100px";
+			height: "200px";
+			bgcolor: "maroon";
+		});
+	});
+	
+	
+	
+$(document).ready(function() {
+    $("#mydiv").animate({
+        color : 'green',
+        width : '200px',
+        height : '200px',
+        bgcolor : 'gray',
+    //},5000, 'swing');
+    }, 5000, function() {
+        $("p").append("Annimation Completed");
+    });
+});
+
+</script>
+
+</head>
+<body>
+<div>
+<h1>Hello</h1>
+</div>
+<div class="mydiv">
+<h1>I am checking</h1>
+</div>
+<div class="newdiv">
+<p>This is sample</p>
+</div>
+</body>
+</html>

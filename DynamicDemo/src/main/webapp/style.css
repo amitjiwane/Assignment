@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+
+
+h4{
+	font-family: sans-serif;
+	border-color: yellow;
+}
+
+h1{
+	font-family: sans-serif;
+	border-color: lime;
+}
+
+class selector
+.abc{ 
+	background-color: navy;
+	font-size: larger;
+color: orange;
+}
+
+id selector
+#checkId{
+	background-color: aqua;
+	font-family: sans-serif;
+	border: thick;
+	border-top-color: orange;
+}

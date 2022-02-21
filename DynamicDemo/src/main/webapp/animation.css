@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+h1{
+ width: 100%;
+ height: 100%;
+ background-color: green;
+ color: red;
+ transition: width 2s, height 2s;
+}
+
+h1:hover{
+ width: 100%;
+ height: 100%;
+ background-color: green;
+ color: red;
+ transition: width 2s, height 2s;
+}
+.abc{
+	background-color: gray;
+}

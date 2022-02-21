@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+table{
+	border: 2px solid;
+	color: black;
+	
+}
+th{
+	background-color: gray;
+}
+h1{
+	background-color: gray;
+}
