@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="padding-auto">
+
+<div class="col-6">
+<h1>Create New Student</h1>
+
+<form action="@{'/save'}" method="post">
+<div>
+<table>
+<tr>
+<label>Student Name</label>
+<input type="hidden" th:field="*{id}">
+<input type="text" th:field="*{studentName}" class="form-control" placeholder="Enter your name">
+</tr>
+</div>
+
+<div>
+<tr>
+<label>Course</label>
+<input type="text" th:field="*{course}" class="form-control" placeholder="Enter ur course">
+</tr>
+</div>
+
+<div>
+<tr>
+<label>Fee</label>
+<input type="text" th:field="*{fee}" class="form-control" placeholder="Enter Your Fees">
+</tr>
+
+<div align="right">
+<tr>
+<button type="submit">Save</button>
+</tr>
+</div>
+
+</table>
+
+</div>
+
+
+</form>
+</div>
+
+</div>
+</body>
+</html>

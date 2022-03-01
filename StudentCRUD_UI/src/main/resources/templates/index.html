@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+<h1>Student Registration</h1>
+</div>
+<div align="left">
+<h3><a th:href="@{'/new'}">Add New</a></h3>
+</div>
+
+<div>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>Student ID</th>
+      <th>Student Name</th>
+      <th>Course</th>
+      <th>Fee</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="student : ${liststudent}">
+     <td th:student.id>Student Id</td>
+     <td th:student.studentName>Student Name</td>
+     <td th:student.course>Course</td>
+     <td th:student.fee>Fee</td>
+     
+     <td>Edit</td>
+     <td>Delete</td>
+
+    </tr>
+  </tbody>
+</table>
+
+</div>
+</body>
+</html>
